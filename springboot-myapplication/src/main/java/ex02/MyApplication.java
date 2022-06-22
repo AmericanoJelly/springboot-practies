@@ -1,18 +1,11 @@
-package ex01;
+package ex02;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-/**
- * 
- * Spring Boot Test Integration 기반
- * Error : Spring Boot Test Integration(@SpringBootTest) 에서는
- * @Configuration을 달고 있는 설정 클래스는 자동(스캔) 하지 못한다.
- */
-
-@Configuration
+@SpringBootConfiguration
 public class MyApplication {
 
 	@Bean
